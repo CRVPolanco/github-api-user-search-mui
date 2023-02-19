@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const SearcherStyle = {
   width: '80%',
-  marginTop: '32px',
+  marginTop: '16px',
 }
 
 const Searcher = ({ setInput, isError }) => {

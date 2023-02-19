@@ -3,6 +3,7 @@ import { Container, Stack, Typography, useMediaQuery } from '@mui/material';
 import Searcher from './components/Searcher';
 import fetchAPI from './utils/fetchAPI';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import About from './components/About';
 
 const styles = {
   display: 'flex',
@@ -55,6 +56,7 @@ function App() {
         <Typography variant={isMobile ? "h5" : "h3"}>GitHub User Search!</Typography>
       </Stack>
       <Searcher setInput={setInput} isError={error} />
+      <About isMobile={isMobile} user={user} />
     </Container>
   )
 }

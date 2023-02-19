@@ -26,6 +26,8 @@ function App() {
   const getUser = async (user) => {
     const response = await fetchAPI(user);
 
+    console.log(response);
+
     if(response.login === 'octocat'){
       localStorage.setItem('default_user', JSON.stringify(user));
     }
